@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Оценка удовлетворенности полета</title>
+  <link rel="stylesheet" href="simon.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">SkyRate</div>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#features">Преимущества</a>
+      <a href="#feedback">Оценка</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Добро пожаловать на SkyRate</h1>
+    <p>Помогите нам сделать ваш следующий полет еще лучше!</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>О нас</h2>
+    <p>Мы собираем отзывы пассажиров, чтобы авиакомпании могли улучшить комфорт и безопасность полетов. Ваше мнение — важно!</p>
+  </section>
+
+  <section id="features" class="section features">
+    <h2>Почему это важно?</h2>
+    <ul>
+      <li>📉 Улучшение сервиса на основе данных</li>
+      <li>✈️ Персонализированные предложения</li>
+      <li>😊 Повышение удовлетворенности пассажиров</li>
+    </ul>
+  </section>
+
+  <section id="feedback" class="section">
+    <h2>Оцените ваш последний полет</h2>
+    <form id="surveyForm">
+      <label>
+        Ваше имя:
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Оцените комфорт:
+        <select name="comfort" required>
+          <option value="">Выберите</option>
+          <option value="5">Отлично</option>
+          <option value="4">Хорошо</option>
+          <option value="3">Удовлетворительно</option>
+          <option value="2">Плохо</option>
+          <option value="1">Ужасно</option>
+        </select>
+      </label>
+
+      <label>
+        Комментарии:
+        <textarea name="comments" placeholder="Ваш отзыв..."></textarea>
+      </label>
+
+      <button type="submit">Отправить</button>
+    </form>
+
+    <div id="thankYouMessage" class="hidden">
+      <h3>Спасибо за ваш отзыв!</h3>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SkyRate. Все права защищены.</p>
+  </footer>
+
+  <script src="simon.js"></script>
+</body>
+</html>
